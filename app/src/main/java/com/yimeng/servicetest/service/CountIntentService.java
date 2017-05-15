@@ -45,6 +45,7 @@ public class CountIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         // 模拟操作：计数10次
+
         int count = 0;
         int MAX_COUNT = 10;
         do {
