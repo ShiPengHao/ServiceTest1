@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yimeng.servicetest">
+
+    <permission     android:name="com.yimeng.servicetest.service.CountIntentService"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="com.yimeng.servicetest.service.CountIntentService" />
+
+    <application
+        android:name=".utils.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/one"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name=".service.CountIntentService" />
+        <service
+            android:name=".service.CountService"
+            android:exported="true"
+            android:permission="com.yimeng.servicetest.service.CountIntentService">
+            <intent-filter>
+                <action android:name="com.yimeng.servicetest.service.CountIntentService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

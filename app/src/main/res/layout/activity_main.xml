@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="单进程启停服务"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_is"
+            style="@style/MyText"
+            android:text="@string/intent_service_start" />
+
+        <TextView
+            android:id="@+id/tv_s"
+            style="@style/MyText"
+            android:text="@string/service_start" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="单进程绑定服务--binder"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_bs"
+            style="@style/MyText"
+            android:text="@string/bind_service" />
+
+        <TextView
+            android:id="@+id/tv_bs_pause"
+            style="@style/MyText"
+            android:text="@string/count_pause" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/bind_service_messenger"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_bs_messenger"
+            style="@style/MyText"
+            android:text="@string/bind_service_messenger" />
+
+        <TextView
+            android:id="@+id/tv_bs_messenger_count"
+            style="@style/MyText"
+            android:text="@string/count" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/bind_service_aidl"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_bs_aidl"
+            style="@style/MyText"
+            android:text="@string/bind_service_aidl" />
+
+        <TextView
+            android:id="@+id/tv_bs_aidl_count"
+            style="@style/MyText"
+            android:text="@string/count" />
+
+    </LinearLayout>
+</ScrollView>

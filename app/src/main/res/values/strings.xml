@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ServiceTest</string>
+    <string name="intent_service_start">启动intent service</string>
+    <string name="intent_service_stop">停止intent service</string>
+    <string name="service_start">启动普通service</string>
+    <string name="service_stop">停止普通service</string>
+    <string name="bind_service">绑定service</string>
+    <string name="unbind_service">解绑服务</string>
+    <string name="count_pause">停止计数</string>
+    <string name="service_not_bound">未绑定服务</string>
+    <string name="count_continue">继续计数</string>
+    <string name="bind_service_messenger">跨进程绑定服务--messenger</string>
+    <string name="unbind_service_messenger">跨进程解绑服务--messenger</string>
+    <string name="bind_service_aidl">跨进程绑定服务--AIDL</string>
+    <string name="unbind_service_aidl">跨进程解绑服务--AIDL</string>
+    <string name="count">计数</string>
+</resources>
