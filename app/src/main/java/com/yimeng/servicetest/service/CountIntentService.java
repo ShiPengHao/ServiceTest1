@@ -47,6 +47,7 @@ public class CountIntentService extends IntentService {
         // 模拟操作：计数10次
         int count = 0;
         int MAX_COUNT = 10;
+
         do {
             SystemClock.sleep(1000);
             if (runningFlag) {
