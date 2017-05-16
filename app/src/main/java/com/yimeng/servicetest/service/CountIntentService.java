@@ -40,7 +40,7 @@ public class CountIntentService extends IntentService {
         runningFlag = false;
         mLocalBroadcastManager.sendBroadcast(new Intent(DEFAULT_NAME));
         MyToast.showLog(this, "onDestroy");
-        //on destroy
+        //on destroy ,yes
     }
 
     @Override
