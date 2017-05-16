@@ -32,6 +32,7 @@ public class CountIntentService extends IntentService {
         runningFlag = true;
         mLocalBroadcastManager = LocalBroadcastManager.getInstance(MyApp.getContext());
         MyToast.showLog(this, "onCreate");
+        // ts
     }
 
     @Override
